@@ -13,8 +13,8 @@ const App = () => {
       </View>
       {/* Contêiner central para o formulário de login */}
       <View style={styles.container}>
-        {/* Imagem de Login */}
-        <Image style={styles.loginImage} source={require('./login.png')} />
+        {/* Texto "Login" */}
+        <Text style={styles.loginText}>Login</Text>
         {/* Campo de entrada para o email */}
         <TextInput style={styles.input} placeholder="Email" />
         {/* Campo de entrada para a senha */}
@@ -69,10 +69,11 @@ const styles = StyleSheet.create({
     height: 40,
     marginRight: 10,
   },
-  loginImage: {
-    width: 100,
-    height: 100,
-    alignSelf: 'center',
+  loginText: {
+    fontSize: 24,
+    color: '#ff99cc', // Rosa clarinho
+    marginBottom: 20,
+    fontFamily: 'cursive', // Fonte cursiva
   },
   instaImage: {
     width: 50,
